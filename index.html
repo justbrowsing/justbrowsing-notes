@@ -3,89 +3,52 @@
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta charset="utf-8">
-
-<title>bootstrap-wysihtml5</title>
-
-
-<link rel="stylesheet" type="text/css" href="lib/css/bootstrap.min.css"></link>
-<link rel="stylesheet" type="text/css" href="lib/css/prettify.css"></link>
-<link rel="stylesheet" type="text/css" href="src/bootstrap-wysihtml5.css"></link>
-
-<style type="text/css" media="screen">
-	.btn.jumbo {
-		font-size: 20px;
-		font-weight: normal;
-		padding: 14px 24px;
-		margin-right: 10px;
-		-webkit-border-radius: 6px;
-		-moz-border-radius: 6px;
-		border-radius: 6px;
-	}
-</style>
-
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-30181385-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
+<title>Notes</title>
+<link href="data:image/x-icon;base64,
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAAAAAAAD5Q7t/AAAACXBI
+WXMAABcSAAAXEgFnn9JSAAAAB3RJTUUH3QEZChgjX+74CQAAAkJJREFUOMuNk11IU2EYx39nH2c7
+B0mO3ZhEzjRKCtMMMbKolEBBQsS6K8ygIJBEoju70JtohHeBF1JhKEREF8s+sO+a1nJIipUNdKam
+q+bacZ7p2U43uVIzfeCFl5fn+T/P//fyCAChYDATaAMKWSXcXR242i8xF1GHZzSt0vT7fU3FvsG3
+dN1qxnnhBk5HmUMSeLAgsGpxVItw7coZqmsa0V56EDsfY8wbyRbWGLdbG8jfmce8YaXH4cCfCTHB
+dD0hMB0KEY1GE0fXdeLxOCazGf+QF4/7IdVHS/g50EBofBf9KRLz36ZrFywgWkVEqxWLxYrZbMYw
+DARAn5vFdbOJ8uLdWCIjTAR+cL/fxcnzLbQ9UWcTE8iyhCxLKEtGb3WeZl9+BtnpSUx99tLzKcah
+8lOkb8kFwPQ/3173PcZ8HooKclDHe3F/iGBNSqX0WH0iZ0UGoWCAFmc9Rw4XMDToZWQkyHu/wbmm
+ZgzjT5MVGbjaL5O3fTMpMsxMj9Hnj1FaVcumjGwsFstyAVmWUBSFtA2pqIEhRP0LFSU7SDE+4hvX
+2Ji+lbKqs4iiuMjmPxkMvHtE8cEC5KwifJMw/B1O1F1FEIRluaa/GUxOTeEfHcXz5gUzrOPVs6d0
+9qrsLa9D1eIEAgHC4TC6ri+HKFpFjHiciBpGj8Gdu8/RtTAVxy+yLWcPdpsNu92OzWZbxGDh1i3L
+UqEsS0wM9xGPfKXwQAWVNY3YpaSVfrkbQFi6zq+7OlDWp5Gdu3+19chKVhTfL/Yv7j72vOA2AAAA
+AElFTkSuQmCC
+" rel="icon" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"></link>
+<link rel="stylesheet" type="text/css" href="css/prettify.css"></link>
+<link rel="stylesheet" type="text/css" href="css/bootstrap-wysihtml5.css"></link>
 </head>
-<body>
+
+<body style="background-color: rgb(238, 238, 238);">
 <div class="container">
-	<div class="hero-unit" style="margin-top:40px">
-		<h1 style="font-size:58px">bootstrap-wysihtml5 <small>Simple, beautiful wysiwyg editors</small></h1>
+	<div style="margin-top:20px; margin-left:20px; margin-right:40px">
+		<h4>bootstrap-wysihtml5 <small>Simple, beautiful wysiwyg editors</small></h4>
 		<hr/>
-		<textarea class="textarea" placeholder="Enter text ..." style="width: 810px; height: 200px"></textarea>
-	</div>
-	
-	<div class="row">
-		<div class="span6">
-	        <h2>About</h2>
-	        <p>
-				bootstrap-wysihtml5 is a javascript plugin that makes it easy to create simple, beautiful wysiwyg editors with the help of <a href="https://github.com/xing/wysihtml5">wysihtml5</a> and <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>
-			</p>
-			
-			<p style="text-align:center; margin-top:20px">
-				<a class="btn btn-large btn-primary jumbo" href="https://github.com/jhollingworth/bootstrap-wysihtml5/">View project on Github</a>
-			</p>
-		</div>
-		<div class="span6" >
-			<h2>Usage</h2>
-
-
-		    <p>
-				<pre class="prettyprint linenums">$('.textarea').wysihtml5();</pre>     
-			</p>
-		
-			<h3>Dependencies</h3>
-	        <p>
-				<ul>
-					<li><a href="https://raw.github.com/jhollingworth/bootstrap-wysihtml5/master/src/bootstrap-wysihtml5.js">bootstrap-wysihtml5.js</a></li>
-					<li><a href="https://raw.github.com/jhollingworth/bootstrap-wysihtml5/master/src/bootstrap-wysihtml5.css">bootstrap-wysihtml5.css</a></li>
-					<li><a href="https://github.com/xing/wysihtml5">wysihtml5</a></li>
-					<li><a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a></li>
-				</ul>
-	    	</p> 
-		</div>
+		<textarea class="textarea" placeholder="Enter text ..." style="width: 100%; height: 400px"></textarea>
 	</div>
 </div>
 
-
-<script src="lib/js/wysihtml5-0.3.0.js"></script>
-<script src="lib/js/jquery-1.7.2.min.js"></script>
-<script src="lib/js/prettify.js"></script>
-<script src="lib/js/bootstrap.min.js"></script>
-<script src="src/bootstrap-wysihtml5.js"></script>
+<script src="js/wysihtml5-0.3.0.js"></script>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/prettify.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-wysihtml5.js"></script>
 
 <script>
-	$('.textarea').wysihtml5();
+$('.textarea').wysihtml5({
+	"font-styles": true, //Font styling, e.g. h1, h2, etc. Default true
+	"emphasis": true, //Italics, bold, etc. Default true
+	"lists": true, //(Un)ordered lists, e.g. Bullets, Numbers. Default true
+	"html": true, //Button which allows you to edit the generated HTML. Default false
+	"link": true, //Button to insert a link. Default true
+	"image": true, //Button to insert an image. Default true,
+	"color": true //Button to change color of font  
+});
 </script>
 
 <script type="text/javascript" charset="utf-8">
