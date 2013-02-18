@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta charset="utf-8">
+<title>Notes</title>
+<link href="data:image/x-icon;base64,
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QAAAAAAAD5Q7t/AAAACXBI
+WXMAABcSAAAXEgFnn9JSAAAAB3RJTUUH3QEZChgjX+74CQAAAkJJREFUOMuNk11IU2EYx39nH2c7
+B0mO3ZhEzjRKCtMMMbKolEBBQsS6K8ygIJBEoju70JtohHeBF1JhKEREF8s+sO+a1nJIipUNdKam
+q+bacZ7p2U43uVIzfeCFl5fn+T/P//fyCAChYDATaAMKWSXcXR242i8xF1GHZzSt0vT7fU3FvsG3
+dN1qxnnhBk5HmUMSeLAgsGpxVItw7coZqmsa0V56EDsfY8wbyRbWGLdbG8jfmce8YaXH4cCfCTHB
+dD0hMB0KEY1GE0fXdeLxOCazGf+QF4/7IdVHS/g50EBofBf9KRLz36ZrFywgWkVEqxWLxYrZbMYw
+DARAn5vFdbOJ8uLdWCIjTAR+cL/fxcnzLbQ9UWcTE8iyhCxLKEtGb3WeZl9+BtnpSUx99tLzKcah
+8lOkb8kFwPQ/3173PcZ8HooKclDHe3F/iGBNSqX0WH0iZ0UGoWCAFmc9Rw4XMDToZWQkyHu/wbmm
+ZgzjT5MVGbjaL5O3fTMpMsxMj9Hnj1FaVcumjGwsFstyAVmWUBSFtA2pqIEhRP0LFSU7SDE+4hvX
+2Ji+lbKqs4iiuMjmPxkMvHtE8cEC5KwifJMw/B1O1F1FEIRluaa/GUxOTeEfHcXz5gUzrOPVs6d0
+9qrsLa9D1eIEAgHC4TC6ri+HKFpFjHiciBpGj8Gdu8/RtTAVxy+yLWcPdpsNu92OzWZbxGDh1i3L
+UqEsS0wM9xGPfKXwQAWVNY3YpaSVfrkbQFi6zq+7OlDWp5Gdu3+19chKVhTfL/Yv7j72vOA2AAAA
+AElFTkSuQmCC
+" rel="icon" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"></link>
+<link rel="stylesheet" type="text/css" href="css/prettify.css"></link>
+<link rel="stylesheet" type="text/css" href="css/bootstrap-wysihtml5.css"></link>
+</head>
+
+<body style="background-color: rgb(238, 238, 238);">
+<div class="container">
+	<div style="margin-top:20px; margin-left:20px; margin-right:40px">
+		<h4>bootstrap-wysihtml5 <small>Simple, beautiful wysiwyg editors</small></h4>
+		<hr/>
+		<textarea class="textarea" placeholder="Enter text ..." style="width: 100%; height: 400px"></textarea>
+	</div>
+</div>
+
+<script src="js/wysihtml5-0.3.0.js"></script>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/prettify.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-wysihtml5.js"></script>
+
+<script>
+$('.textarea').wysihtml5({
+	"font-styles": true, //Font styling, e.g. h1, h2, etc. Default true
+	"emphasis": true, //Italics, bold, etc. Default true
+	"lists": true, //(Un)ordered lists, e.g. Bullets, Numbers. Default true
+	"html": true, //Button which allows you to edit the generated HTML. Default false
+	"link": true, //Button to insert a link. Default true
+	"image": true, //Button to insert an image. Default true,
+	"color": true //Button to change color of font  
+});
+</script>
+
+<script type="text/javascript" charset="utf-8">
+	$(prettyPrint);
+</script>
+
+</body>
+</html>
